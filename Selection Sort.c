@@ -6,17 +6,17 @@ void main()
 	int n,i,j,minimum,temp;
 	printf("Enter the array size:\n");
 	scanf("%d",&n);
-	int a[n]; 
+	int a[5]; 
 	srand(time(NULL));
 	for(i=0;i<n;i++)
 	{
 		a[i]=rand()%20000;
 	}
-	/*printf("Array value is:\n");
+	printf("Array value is:\n");
 	for(i=0;i<n;i++)
 	{
 		printf("%d ",a[i]);
-	}*/
+	}
 	clock_t start=clock();
 	for(i=0;i<n-1;i++)
 	{
@@ -36,13 +36,13 @@ void main()
 	double timetaken=((double)(end-start))/CLOCKS_PER_SEC;
 	printf("The Time Taken is %f\n",timetaken);
 }
-	/*printf("\nThe sorted elememts are:\n");
+	printf("\nThe sorted elememts are:\n");
 	for(i=0;i<n;i++)
 	{
 		printf("%d ",a[i]);
 	}
 printf("\n");
-}*/
+}
 
 	
 	
