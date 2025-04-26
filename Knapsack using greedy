@@ -69,7 +69,7 @@ int main()
     }
     printf("Enter the capacity of the knapsack:");
     scanf("%lf",&W);
-    printf("\n The maximim value in a knapsack of capacity %2f is:%2f\n",W,computeMaxValue(W,weight,value,ratio,nItems));
+    printf("\n The maximim value in a knapsack of capacity %0.2f is:%0.2f\n",W,computeMaxValue(W,weight,value,ratio,nItems));
     return 0;
 }
 
